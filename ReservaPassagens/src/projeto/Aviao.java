@@ -6,7 +6,6 @@ public class Aviao {
     public Passageiro[][] lugares;
     public Aeronave aeronave;
 
-
     public Aviao(int linhas, int colunas) {
         lugares = new Passageiro[linhas][colunas];
     }

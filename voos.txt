@@ -1,0 +1,5 @@
+Voo 002 { 
+ numeroVoo= 002
+ data= 31/10/2023
+ hora= 01:45
+ } 

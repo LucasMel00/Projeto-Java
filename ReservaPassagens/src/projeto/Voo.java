@@ -1,53 +1,70 @@
 package projeto;
+
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.List;
+
+import javax.swing.JOptionPane;
 
 public class Voo {
-    public static ArrayList<String> voos = new ArrayList<>();
-    public static ArrayList<String> numeroVoo = new ArrayList<>();
-    public static ArrayList<String> data = new ArrayList<>();
-    public static ArrayList<String> hora = new ArrayList<>();
+    private String numeroVoo;
+    private String data;
+    private String hora;
 
-    public static class voo {
-        Aviao aviao;
-        String numeroVoo;
-        String data;
-        String hora;
-
-        public voo(String numeroVoo, Aviao aviao, String data, String hora) {
-            this.numeroVoo = numeroVoo;
-            this.aviao = aviao;
-            this.data = data;
-            this.hora = hora;
-        }
-
-        public String getNumeroVoo() {
-            return numeroVoo;
-        }
-
-        public String getData() {
-            return data;
-        }
-
-        public String getHora() {
-            return hora;
-        }
-
-        public ArrayList<String> getVoos() {
-            return voos;
-        }
+    public Voo(String numeroVoo, String data, String hora) {
+        this.numeroVoo = numeroVoo;
+        this.data = data;
+        this.hora = hora;
     }
 
-    public String toString(String numeroVoo, Aeronave aeronave, String data, String hora) {
-
-        return "Voo{" +
-                "numeroVoo=" + numeroVoo +
-                ", aeronave='" + aeronave + '\'' +
-                ", data='" + data + '\'' +
-                ", hora='" + hora + '\'' +
-                '}';
+    public String getNumeroVoo() {
+        return numeroVoo;
     }
+
+    public void setNumeroVoo(String numeroVoo) {
+        this.numeroVoo = numeroVoo;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    @Override
+    public String toString() {
+        return "Voo " + numeroVoo + " { "  +"\n"+
+                " numeroVoo= " + numeroVoo + "\n" +
+                " data= " + data + "\n" +
+                " hora= " + hora + "\n" +
+                " } ";
+    }
+
+    // Método para salvar o voo em um arquivo TXT
+    public void salvarEmArquivo(String caminhoArquivo) throws IOException {
+        FileWriter fileWriter = new FileWriter(caminhoArquivo);
+        fileWriter.write(this.toString() + "\n");
+        fileWriter.close();
+    }
+
+    // Método para salvar uma lista de voos em um arquivo TXT
+    public static void salvarEmArquivo(ArrayList<Voo> voos, String caminhoArquivo) throws IOException {
+        FileWriter fileWriter = new FileWriter(caminhoArquivo);
+        for (Voo voo : voos) {
+            fileWriter.write(voo.toString() + "\n");
+        }
+        fileWriter.close();
+    }
+
+    
 }

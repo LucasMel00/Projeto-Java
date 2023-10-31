@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 public class App {
    public static void main(String[] args) throws IOException{
 
@@ -31,16 +33,18 @@ public class App {
                                 JOptionPane.showMessageDialog(null, "Aeronave cadastrada com sucesso!");
                                 aeronave.salvarModelosEmArquivo("modelos.txt");
 
-                                
+
                             };
                             break;
                             case 2:
                                 cadastrarVoo();
                                 {
+                                CadastroVoo cadastroVoo = new CadastroVooImpl();
+                                String numeroVoo = JOptionPane.showInputDialog("Informe o número do voo: ");
+                                String dataVoo = JOptionPane.showInputDialog("Informe a data do voo: ");
+                                String horaVoo = JOptionPane.showInputDialog("Informe a hora do voo: ");
+                                cadastroVoo.cadastrarVoo(numeroVoo, dataVoo, horaVoo);
 
-                                    {
-                                        
-                                    }
                                 }
                                 break;
                                 case 3:
