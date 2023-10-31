@@ -1,3 +1,5 @@
+package projeto;
+
 public class Passageiro {
     private String nome;
     private String cpf;

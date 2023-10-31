@@ -1,5 +1,11 @@
+package projeto;
+
+import java.util.ArrayList;
+
 public class Aviao {
-    private Passageiro[][] lugares;
+    public Passageiro[][] lugares;
+    public Aeronave aeronave;
+
 
     public Aviao(int linhas, int colunas) {
         lugares = new Passageiro[linhas][colunas];
@@ -17,8 +23,13 @@ public class Aviao {
         lugares[linha][coluna] = passageiro;
     }
 
-    // New constructor that receives a Passageiro object
-    public Aviao(int linhas, int colunas, Passageiro passageiro) {
+    public ArrayList<String> getAeronave (Aeronave aeronave) {
+        Aeronave a = new Aeronave();
+        return a.getModelos();
+    }
+
+    public Aviao(Aeronave aeronave, int linhas, int colunas, Passageiro passageiro) {
+        this.aeronave = aeronave;
         lugares = new Passageiro[linhas][colunas];
         setPassageiro(0, 0, passageiro);
     }

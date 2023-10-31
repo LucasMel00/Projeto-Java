@@ -1,8 +1,16 @@
+package projeto;
+import projeto.Aeronave;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.*;
 public class App {
-   public static void main(String[] args) {
+   public static void main(String[] args) throws IOException{
+
+    Aeronave aeronave = new Aeronave();
 
     int opcao = 0;
     do {
@@ -16,26 +24,30 @@ public class App {
                         case 1:
                             cadastrarAeronave();
                             {
-                                String modelo = JOptionPane.showInputDialog("Informe o modelo da aeronave: ");
-                                Aeronave novaAeronave = new Aeronave(modelo);
-                                setAeronave.add(novaAeronave);
-                                setModelo(modelo);
-                                System.out.println("Aeronaves cadastradas:");
-                                for (Aeronave aeronaveLista : setAeronave) {
-                                    System.out.println(aeronaveLista.getModelo());
-                                }
+                                aeronave.carregarModelosDoArquivo("modelos.txt");
+                                String model = JOptionPane.showInputDialog("Informe o modelo da aeronave: ");
+                                aeronave.getModelos().add(model);
+                                System.out.println("Aeronaves cadastradas:" + aeronave.getModelos());
                                 JOptionPane.showMessageDialog(null, "Aeronave cadastrada com sucesso!");
-                                System.out.println(modelo);
-                            }; 
+                                aeronave.salvarModelosEmArquivo("modelos.txt");
+
+                                
+                            };
                             break;
                             case 2:
-                                cadastrarAeronave();
+                                cadastrarVoo();
+                                {
+
+                                    {
+                                        
+                                    }
+                                }
                                 break;
-                            case 3:
-                                JOptionPane.showMessageDialog(null, "Saindo...");
-                                break;
-                            default:
-                                JOptionPane.showMessageDialog(null, "Opção inválida!");
+                                case 3:
+                                    JOptionPane.showMessageDialog(null, "Saindo...");
+                                    break;
+                                default:
+                                    JOptionPane.showMessageDialog(null, "Opção inválida!");
                                 break;
                     }} while (opcao1 != 3);
                 case 2:
@@ -49,7 +61,7 @@ public class App {
                     break;
             }
         } while (opcao != 3);
-    } 
+    }
 
 
     private static void setModelo(String modelo) {
@@ -62,8 +74,4 @@ public class App {
     private static void cadastrarVoo() {
     }
 
-    private static void parametroDoSistema() {
-    }
-
-    public static ArrayList<Aeronave> setAeronave = new ArrayList<Aeronave>();
 }
