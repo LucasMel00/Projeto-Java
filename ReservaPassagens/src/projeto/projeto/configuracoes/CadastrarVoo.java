@@ -1,12 +1,14 @@
-package projeto.services;
+package projeto.configuracoes;
 import javax.swing.*;
-import projeto.data.Aviao;
-import projeto.data.Voo;
+
+import projeto.classes.Aviao;
+import projeto.classes.Voo;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Objects;
 
-public class CadastrarVooService {
+public class CadastrarVoo {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
     private static final SimpleDateFormat hourFormat = new SimpleDateFormat("HH:mm");

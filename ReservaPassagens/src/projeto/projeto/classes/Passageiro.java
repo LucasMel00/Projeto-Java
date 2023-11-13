@@ -1,4 +1,4 @@
-package projeto.data;
+package projeto.classes;
 public class Passageiro {
     private final String nome;
     private final String cpf;

@@ -1,9 +1,11 @@
-package projeto.services;
-import projeto.data.Voo;
+package projeto.configuracoes;
 import javax.swing.*;
+
+import projeto.classes.Voo;
+
 import java.util.Map;
 
-public class MostrarVoosService {
+public class MostrarTodosVoos {
     public void mostrarVoos(Map<Integer, Voo> voos) {
         StringBuilder arrayStr = new StringBuilder();
 

@@ -1,8 +1,9 @@
-package projeto.services;
+package projeto.configuracoes;
 import javax.swing.*;
-import projeto.data.Aeronave;
 
-public class AeronaveServices{
+import projeto.classes.Aeronave;
+
+public class AeronaveConfig{
     public Aeronave cadastrarAeronave() {
         String modelo = JOptionPane.showInputDialog("Informe o modelo da aeronave: ");
 

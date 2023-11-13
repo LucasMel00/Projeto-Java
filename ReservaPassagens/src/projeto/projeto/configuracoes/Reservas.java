@@ -1,10 +1,11 @@
-package projeto.services;
-import projeto.data.Passageiro;
-import projeto.data.Voo;
+package projeto.configuracoes;
 import javax.swing.*;
 
-public class ReservaService {
-    private ConsultarLugarService consultarLugaresService = new ConsultarLugarService();
+import projeto.classes.Passageiro;
+import projeto.classes.Voo;
+
+public class Reservas {
+    private ConsultarLugares consultarLugaresService = new ConsultarLugares();
 
     public void reservarLugar(Voo voo) {
         consultarLugaresService.consultarLugares(voo);

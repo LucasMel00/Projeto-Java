@@ -1,23 +1,23 @@
 package projeto;
 
-import projeto.data.Aeronave;
-import projeto.data.Voo;
-import projeto.services.AeronaveServices;
-import projeto.services.CadastrarVooService;
-import projeto.services.ConsultarLugarService;
-import projeto.services.MostrarVoosService;
-import projeto.services.ReservaService;
+import projeto.classes.Aeronave;
+import projeto.classes.Voo;
+import projeto.configuracoes.AeronaveConfig;
+import projeto.configuracoes.CadastrarVoo;
+import projeto.configuracoes.ConsultarLugares;
+import projeto.configuracoes.MostrarTodosVoos;
+import projeto.configuracoes.Reservas;
 
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Main {
-    private static final AeronaveServices aeronaveService = new AeronaveServices();
-    private static final CadastrarVooService cadastrarVooService = new CadastrarVooService();
-    private static final ReservaService reservaService = new ReservaService();
-    private static final ConsultarLugarService consultarLugaresService = new ConsultarLugarService();
-    private static final MostrarVoosService mostrarVoosService = new MostrarVoosService();
+public class Application {
+    private static final AeronaveConfig aeronaveService = new AeronaveConfig();
+    private static final CadastrarVoo cadastrarVooService = new CadastrarVoo();
+    private static final Reservas reservaService = new Reservas();
+    private static final ConsultarLugares consultarLugaresService = new ConsultarLugares();
+    private static final MostrarTodosVoos mostrarVoosService = new MostrarTodosVoos();
 
     private static final String[] menuOptions = {
             "Menu Principal",

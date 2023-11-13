@@ -1,8 +1,9 @@
-package projeto.services;
-import projeto.data.Voo;
+package projeto.configuracoes;
 import javax.swing.*;
 
-public class ConsultarLugarService {
+import projeto.classes.Voo;
+
+public class ConsultarLugares {
     public void consultarLugares(Voo voo) {
         StringBuilder arrayStr = new StringBuilder();
 

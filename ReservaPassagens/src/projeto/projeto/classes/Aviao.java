@@ -1,4 +1,4 @@
-package projeto.data;
+package projeto.classes;
 
 import java.util.Arrays;
 

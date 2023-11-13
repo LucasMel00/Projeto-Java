@@ -1,4 +1,4 @@
-package projeto.data;
+package projeto.classes;
 public class Aeronave {
     protected final String modelo;
 
