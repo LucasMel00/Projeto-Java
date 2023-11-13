@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88596861-ee24-4393-be6f-130d925b4485" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ReservaPassagens/src/projeto/services/AeronaveServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReservaPassagens/src/projeto/Aeronave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReservaPassagens/src/projeto/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReservaPassagens/src/projeto/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReservaPassagens/src/projeto/Aviao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReservaPassagens/src/projeto/CadastroVoo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReservaPassagens/src/projeto/CadastroVooImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReservaPassagens/src/projeto/Passageiro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReservaPassagens/src/projeto/Voo.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2X2B3Jfb5NawNdr30hCMauHYJkB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE": "left",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "262",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "right",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "450",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/melo/Documents/arq/project"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Voo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projeto.Voo" />
+      <module name="Projeto-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projeto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Voo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88596861-ee24-4393-be6f-130d925b4485" name="Changes" comment="" />
+      <created>1697817094673</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697817094673</updated>
+    </task>
+    <servers />
+  </component>
+</project>
