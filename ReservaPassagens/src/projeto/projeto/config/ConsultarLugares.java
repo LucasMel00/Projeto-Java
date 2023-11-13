@@ -1,4 +1,4 @@
-package projeto.configuracoes;
+package projeto.config;
 import javax.swing.*;
 
 import projeto.classes.Voo;

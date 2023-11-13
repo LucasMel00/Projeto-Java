@@ -2,11 +2,11 @@ package projeto;
 
 import projeto.classes.Aeronave;
 import projeto.classes.Voo;
-import projeto.configuracoes.AeronaveConfig;
-import projeto.configuracoes.CadastrarVoo;
-import projeto.configuracoes.ConsultarLugares;
-import projeto.configuracoes.MostrarTodosVoos;
-import projeto.configuracoes.Reservas;
+import projeto.config.AeronaveConfig;
+import projeto.config.CadastrarVoo;
+import projeto.config.ConsultarLugares;
+import projeto.config.MostrarTodosVoos;
+import projeto.config.Reservas;
 
 import javax.swing.*;
 import java.util.ArrayList;
