@@ -1,12 +1,13 @@
 package projeto;
 
 import projeto.classes.Aeronave;
+import projeto.classes.Aviao;
 import projeto.classes.Voo;
 import projeto.config.AeronaveConfig;
-import projeto.config.CadastrarVoo;
-import projeto.config.ConsultarLugares;
-import projeto.config.MostrarTodosVoos;
-import projeto.config.Reservas;
+import projeto.service.CadastrarVoo;
+import projeto.service.ConsultarLugares;
+import projeto.service.MostrarTodosVoos;
+import projeto.service.Reservas;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -45,6 +46,24 @@ public class Application {
         ArrayList<Aeronave> aeronaves = new ArrayList<>();
         HashMap<Integer, Voo> voos = new HashMap<>();
 
+        for (int i = 0; i < 10; i++) {
+            try {
+                int nro = i + 1;
+                String date = "1"+i+"/01/2023";
+                String hour = "12:0"+i;
+                String modelo = "Boeing 747"+ 3*i;
+                int rows = 6;
+                int columns = 6;
+
+                Aviao aviao = new Aviao(modelo, rows, columns);
+                Voo voo = new Voo(aviao, nro, date, hour);
+                voos.put(voo.getNro(), voo);
+
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Erro ao criar voo: " + e.getMessage());
+            }
+        }
+
         int opcaoMenuPrincipal;
         do {
             opcaoMenuPrincipal = showMenu(menuOptions);
@@ -62,6 +81,7 @@ public class Application {
             }
         } while ((opcaoMenuPrincipal >= 1 && opcaoMenuPrincipal != 3) || opcaoMenuPrincipal == 0);
     }
+    
 
     private static void handleParamSistema(ArrayList<Aeronave> aeronaves, HashMap<Integer, Voo> voos) {
         int opcaoParamSistema;
